@@ -167,13 +167,9 @@ describe('CreditCard', function(){
 				'4024007198964305': 'Visa',
 				'4716175187624512': 'Visa',
 
-				'4026000000000000': 'Visa Electron',
-				'4175000000000000': 'Visa Electron',
-				'4405000000000000': 'Visa Electron',
-				'4508000000000000': 'Visa Electron',
-				'4844000000000000': 'Visa Electron',
-				'4913000000000000': 'Visa Electron',
-				'4917000000000000': 'Visa Electron'
+				'4175005276323755': 'Visa Electron',
+				'4844569226417554': 'Visa Electron',
+				'4026887060261031': 'Visa Electron'
 	        };
 
 	        Object.keys(cards).forEach(function(number) {
