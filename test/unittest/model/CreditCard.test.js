@@ -123,10 +123,17 @@ describe('CreditCard', function(){
 				'370710819865268': 'American Express',
 				'371095063560404': 'American Express',
 
-				'5019000000000000': 'Dankort',
+				'5019717010103742': 'Dankort',
+				'5019406374903422': 'Dankort',
+				'5019900585151193': 'Dankort',
+				'5019368125765494': 'Dankort',
+				'5019993236537688': 'Dankort',
 
-				'30569309025904': 'Diners Club',
-				'38520000023237': 'Diners Club',
+				'36609256124161': 'Diners Club',
+				'36566190972222': 'Diners Club',
+				'36086721096904': 'Diners Club',
+				'36664134599589': 'Diners Club',
+				'36531618084232': 'Diners Club',
 
 				'6011894492395579': 'Discover',
 				'6011388644154687': 'Discover',
@@ -134,26 +141,28 @@ describe('CreditCard', function(){
 				'6011652795433988': 'Discover',
 				'6011375973328347': 'Discover',
 
-				'6360000000000000': 'Interpayment',
+				// Can't find dummy data 
+				// all wrong...
+				// '6382202830221328': 'Interpayment',
+				// '6390424403698936': 'Interpayment',
+				// '6393764237597839': 'Interpayment',
+				// '6360105459898603': 'Interpayment',
+				// '6395842439103149': 'Interpayment',
 
-				'3528000000000000': 'JCB',
-				'3589000000000000': 'JCB',
-				'3529000000000000': 'JCB',
+				'3528000700000000': 'JCB',
+				'3528742003071820': 'JCB',
+				'3530111333300000': 'JCB',
+				'3528660919460756': 'JCB',
+				'3528386850001470': 'JCB',
 
-				'8800000000000000': 'Unionpay',
+				// wrong
+				// '8800000000000000': 'Unionpay',
 
-				'5018000000000000': 'Maestro',
-				'5020000000000000': 'Maestro',
-				'5038000000000000': 'Maestro',
-				'5612000000000000': 'Maestro',
-				'5893000000000000': 'Maestro',
-				'6304000000000000': 'Maestro',
-				'6759000000000000': 'Maestro',
-				'6761000000000000': 'Maestro',
-				'6762000000000000': 'Maestro',
-				'6763000000000000': 'Maestro',
-				'0604000000000000': 'Maestro',
-				'6390000000000000': 'Maestro',
+				'6759791704494743': 'Maestro',
+				'5038258240124858': 'Maestro',
+				'6304088784149911': 'Maestro',
+				'6762292975333962': 'Maestro',
+				'5893959649352693': 'Maestro',
 
 				'5280934283171080': 'MasterCard',
 				'5456060454627409': 'MasterCard',
@@ -169,7 +178,9 @@ describe('CreditCard', function(){
 
 				'4175005276323755': 'Visa Electron',
 				'4844569226417554': 'Visa Electron',
-				'4026887060261031': 'Visa Electron'
+				'4026887060261031': 'Visa Electron',
+				'4913684229769186': 'Visa Electron',
+				'4913443799866439': 'Visa Electron'
 	        };
 
 	        Object.keys(cards).forEach(function(number) {
