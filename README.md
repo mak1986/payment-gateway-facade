@@ -4,9 +4,36 @@
 
 The library is designed to easily add another additional payment gateways.
 
-__To add a new payment gateway:__
+## Installation ##
 
-Add machine name, pretty name and module name for the new payment gateway in ./lib/gateway/config.json.
+Install bower components by running this command:
+```
+bower install
+```
+
+Install node modules by running this command:
+```
+npm install
+```
+
+## To start the app ##
+
+Start mongodb by running this command:
+```
+sudo service mongod start
+```
+Note: If you havn't mongdb installed goto https://docs.mongodb.com/manual/installation/
+
+Run this command to start the server and then go to http://localhost:3000.
+```
+npm start
+```
+
+
+
+## Adding a new payment gateway ##
+
+__STEP 1:__ Add machine name, pretty name and module name for the new payment gateway in ./lib/gateway/config.json.
 
 ```
 [
@@ -23,9 +50,9 @@ Add machine name, pretty name and module name for the new payment gateway in ./l
 ]
 ```
 
-Create a new gateway folder in ./lib/gateway and then add a new config folder in it.
+__STEP 2:__ Create a new gateway folder in ./lib/gateway and then add a new config folder in it.
 
-Create a config.json file in the config folder you just created. This file holds your new payment gateway values. The code example below belongs to Braintree gateway.
+__STEP 3:__ Create a config.json file in the config folder you just created. This file holds your new payment gateway values. The code example below belongs to Braintree gateway.
 
 ```
 {
@@ -57,7 +84,7 @@ Create a config.json file in the config folder you just created. This file holds
 }
 ```
 
-Create a new file in your new payment gateway folder. Make sure to Implement the methods as showing in the code below.
+__STEP 4:__ Create a new file in your new payment gateway folder. Make sure to Implement the methods as showing in the code below.
 
 ```
 (function(){
@@ -138,4 +165,4 @@ Create a new file in your new payment gateway folder. Make sure to Implement the
 
 }());
 ```
-
+__STEP 5:__ That's it now try run the app.
