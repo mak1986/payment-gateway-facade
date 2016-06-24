@@ -1,0 +1,12 @@
+[
+	{ 
+		"machine_name": "paypal", 
+		"pretty_name": "PayPal",
+		"module_name": "PaypalGateway"
+	},
+	{
+		"machine_name": "braintree", 
+		"pretty_name": "Braintree",
+		"module_name": "BraintreeGateway"
+	}
+]

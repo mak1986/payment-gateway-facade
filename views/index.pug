@@ -1,0 +1,142 @@
+doctype html
+html(lang="en")
+	head
+		title HotelQuickly
+		meta(charset="UTF-8")
+		link(rel="stylesheet",type="text/css",href="bower_components/bootstrap/dist/css/bootstrap.min.css")
+		style.
+			#loading {
+			  animation: blinker 1s linear infinite;
+			}
+
+			@keyframes blinker {  
+			  50% { opacity: 0.0; }
+			}
+	body
+		
+		.container
+			
+			.row
+				
+				.col-md-12
+					
+					h1 HotelQuickly
+					
+					hr
+					
+					if success
+						div(class="alert alert-success",role="alert")= success
+
+					if error
+						div(class="alert alert-danger",role="alert")= error
+
+					form(
+						action="/checkout"
+						id="checkout-form" 
+						method="post"
+						)
+						
+						h2 Order section
+						
+						.form-group
+							label(for="price") Price
+							input(
+								class="form-control" 
+								id="price"
+								name="price" 
+								placeholder="Price" 
+								type="number"
+								value="200"
+								)
+					
+						.form-group
+							
+							label(for="currency") Currency					
+							
+							select(
+								class="form-control" 
+								id="currency"
+								name="currency"
+								)
+								option(value="USD") USD
+								option(value="EUR") EUR
+								option(value="THB") THB
+								option(value="HKD") HKD
+								option(value="SGD") SGD
+								option(value="AUD") AUD
+
+						h2 Payment section
+						
+						.form-group
+						
+							label(for="credit-card-holder-name") Credit card holder name
+						
+							input(
+								class="form-control"
+								id="credit-card-holder-name" 
+								name="credit_card_holder_name"
+								placeholder="Credit card holder name"
+								type="text"
+								value="Mak Jacobsen"
+								)
+						
+						.form-group
+						
+							label(for="credit-card-number") Credit card number
+						
+							input(
+								class="form-control"
+								id="credit-card-number"
+								name="credit_card_number"	
+								placeholder="Credit card number"
+								type="text"
+								value="4111111111111111"
+								)
+						
+						.form-group
+						
+							label(for="credit-card-expiration-date") Credit card expiration
+						
+							input(
+								class="form-control" 
+								id="credit-card-expiration-date"
+								name="credit_card_expiration_date"
+								placeholder="Credit card expiration date"
+								type="text"
+								value="10/2020"
+								)
+						
+						.form-group
+						
+							label(for="credit-card-cvv") Credit card CVV
+						
+							input(
+								class="form-control"
+								id="credit-card-cvv"
+								name="credit_card_cvv"
+								placeholder="Credit card CVV"
+								type="text"
+								value="100"
+								)
+						a(
+							href="javascript:;" 
+							id="submit-btn" 
+							class="btn btn-default" 
+							onclick="submit()"
+							) Submit
+						p(id="loading") Loading please wait...
+
+		script(
+			src="bower_components/jquery/dist/jquery.min.js" 
+			type="text/javascript"
+			)
+		script(
+			src="bower_components/braintree-web/dist/braintree.js"
+			type="text/javascript"
+			)
+		script(
+			src="js/braintreeClientSetup.js"
+			type="text/javascript"
+			)
+		
+		

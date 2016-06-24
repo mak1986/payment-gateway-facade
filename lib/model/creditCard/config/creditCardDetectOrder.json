@@ -1,0 +1,13 @@
+[
+	"visa_electron", 
+	"maestro", 
+	"dankort", 
+	"interpayment",
+	"unionpay",
+	"visa",
+	"mastercard",
+	"amex",
+	"diners_club",
+	"discover",
+	"jcb"
+]

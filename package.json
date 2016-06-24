@@ -1,0 +1,22 @@
+{
+  "name": "payment-gateway-facade",
+  "version": "0.0.1",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "mocha test --recursive"
+  },
+  "author": "Mak1986 <Mak.Jacobsen@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "braintree": "^1.39.0",
+    "express": "^4.14.0",
+    "mongodb": "^2.1.18",
+    "paypal-rest-sdk": "^1.6.9",
+    "pug": "^0.1.0"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "sinon": "^1.17.4"
+  }
+}

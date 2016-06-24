@@ -1,0 +1,21 @@
+{
+	"environment": "sandbox",
+	"credentials":{
+		"clientId": "ARWYCuD6tRZY1b-IW2fTiR-KA5mVtn4XMWDXUf2K5f4kKcdtwiKdviYZwqpSP_d56T0fU37I8a1jv1JE",
+  		"clientSecret": "EFf6yOXSgodhs0Ct2XQPIrRXFpoy8vxCgIMIPp6rybUcY3ynLsc3So1e_Go_nzjjoDGf6d9ez4QzdpWG"
+	},
+	"machine_name_mapping":{
+		"amex": "amex",
+		"dankort": null ,
+		"diners_club": null,
+		"discover": "discover",
+		"interpayment": null,
+		"jcb": null,
+		"maestro": "maestro",
+		"mastercard": "mastercard",
+		"unionpay": null,
+		"visa": "visa",
+		"visa_electron": null 
+	},
+	"machine_name": "paypal"
+}

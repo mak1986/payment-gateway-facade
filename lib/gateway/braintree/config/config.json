@@ -1,0 +1,27 @@
+{
+	"environment": "Sandbox",
+	"credentials": {
+		"merchant_id": "4pzzj9tq3dk2rgmj",
+		"public_key": "js44x8w6283wbj4z",
+		"private_key": "3915dcf28b0ee9cbecfaac1befec4469",
+		"machant_account_id": {
+			"THB": "hotelquickly-thb",
+			"HKD": "hotelquickly-hkd",
+			"THB": "hotelquickly-thb"
+		}
+	},
+	"machine_name_mapping": {
+		"amex": "AmEx",
+		"dankort": null ,
+		"diners_club": null,
+		"discover": "Discover",
+		"interpayment": null,
+		"jcb": "JCB",
+		"maestro": "Maestro",
+		"mastercard": "MasterCard",
+		"unionpay": "Unionpay",
+		"visa": "Visa",
+		"visa_electron": null 
+	},
+	"machine_name": "braintree"
+}
