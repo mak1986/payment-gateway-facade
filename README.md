@@ -22,7 +22,7 @@ Start mongodb by running this command:
 ```
 sudo service mongod start
 ```
-Note: If you havn't mongdb installed goto https://docs.mongodb.com/manual/installation/
+Note: If you haven't mongdb installed goto https://docs.mongodb.com/manual/installation/
 
 Run this command to start the server and then go to http://localhost:3000.
 ```

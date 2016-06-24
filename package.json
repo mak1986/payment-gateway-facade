@@ -9,6 +9,7 @@
   "author": "Mak1986 <Mak.Jacobsen@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "body-parser": "^1.15.2",
     "braintree": "^1.39.0",
     "express": "^4.14.0",
     "mongodb": "^2.1.18",
