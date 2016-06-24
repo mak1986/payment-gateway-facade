@@ -31,8 +31,14 @@ Create a config.json file in the config folder you just created. This file holds
 {
 	"environment": "Sandbox",
 	"credentials": {
-		"public_key": "xxxxxxxxxxxxx",
-		"private_key": "xxxxxxxxxxxxx",
+		"merchant_id": "xxxxxxxxxx",
+		"public_key": "xxxxxxxxxx",
+		"private_key": "xxxxxxxxxx",
+		"machant_account_id": {
+			"THB": "xxxxxxxxxx",
+			"HKD": "xxxxxxxxxx",
+			"THB": "xxxxxxxxxx"
+		}
 	},
 	"machine_name_mapping": {
 		"amex": "AmEx",
@@ -90,8 +96,8 @@ Create a new file in your new payment gateway folder. Make sure to Implement the
 
 	// PaypalGateway.prototype.getClientToken = function(callback){
 
-	//	Uncomment and mplement this if your new gateway requires the client to get a client token. 
-	//	If you Implement this method you will need to edit the  ./public/js/clientTokenSetup.js file.
+	//	Uncomment and implement this if your new gateway requires the client to get a client token. 
+	//	If you implement this method you will need to edit the  ./public/js/clientTokenSetup.js file.
 	
 	// };
 
