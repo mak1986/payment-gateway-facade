@@ -35,7 +35,7 @@ npm start
 
 __STEP 1:__ Add machine name, pretty name and module name for the new payment gateway in ./lib/gateway/config.json.
 
-```
+```Json
 [
 	{ 
 		"machine_name": "paypal", 
@@ -54,19 +54,21 @@ __STEP 2:__ Create a new gateway folder in ./lib/gateway and then add a new conf
 
 __STEP 3:__ Create a config.json file in the config folder you just created. This file holds your new payment gateway values. The code example below belongs to Braintree gateway.
 
-```
+```Json
 {
-	"environment": "Sandbox",
+	"machine_name": "braintree",
+	"camel_case": "braintree",
 	"credentials": {
-		"merchant_id": "xxxxxxxxxx",
-		"public_key": "xxxxxxxxxx",
-		"private_key": "xxxxxxxxxx",
+		"merchant_id": "4pzzj9tq3dk2rgmj",
+		"public_key": "js44x8w6283wbj4z",
+		"private_key": "3915dcf28b0ee9cbecfaac1befec4469",
 		"machant_account_id": {
-			"THB": "xxxxxxxxxx",
-			"HKD": "xxxxxxxxxx",
-			"THB": "xxxxxxxxxx"
+			"THB": "hotelquickly-thb",
+			"HKD": "hotelquickly-hkd",
+			"THB": "hotelquickly-thb"
 		}
 	},
+	"environment": "Sandbox",
 	"machine_name_mapping": {
 		"amex": "AmEx",
 		"dankort": null ,
@@ -79,30 +81,35 @@ __STEP 3:__ Create a config.json file in the config folder you just created. Thi
 		"unionpay": "Unionpay",
 		"visa": "Visa",
 		"visa_electron": null 
-	},
-	"machine_name": "braintree"
+	}
 }
 ```
 
 __STEP 4:__ Create a new file in your new payment gateway folder. Make sure to Implement the methods as showing in the code below.
 
-```
+```Javascript
 (function(){
 	'use strict';
 
-	// Require your new payment gateway module here.
-	var config = require('./config/config.json');
+	// Require necessary files
+	var util = require('util');
+	var Gateway = require('../Gateway');
+	var paypal = require('your-new-payment-gateway-module'); // Require your new payment gateway module here.
 
 	
 	// Constructor method
 	
 	function YourNewPaymentGateway(){
 
-		// add configuration files here
+		Gateway.call(this);
+
+		this.config.setDefaultConfig(__dirname);
 
 		this.connect();
 
 	};
+	
+	util.inherits(YourNewPaymentGateway, Gateway);
 
 	
 	// Public methods
@@ -145,21 +152,6 @@ __STEP 4:__ Create a new file in your new payment gateway folder. Make sure to I
 		return this.getConfig('machine_name');
 
 	};
-
-	// Helper methods
-
-	YourNewPaymentGateway.prototype.addConfig = function(key, value){
-
-		this.config[key] = value;
-	
-	};
-
-	YourNewPaymentGateway.prototype.getConfig = function(key){
-
-		return this.config[key];
-
-	};
-
 
 	module.exports = YourNewPaymentGateway;
 
