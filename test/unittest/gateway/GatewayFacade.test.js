@@ -77,37 +77,6 @@
 
 		});
 
-
-	GatewayFacade.prototype.resolveGateway = function(order, creditCard){
-
-			if(creditCard.getType() == 'amex'){
-		
-				if(order.getCurrency() != 'USD'){
-		
-					throw new this.GatewayFacadeException('AMEX is possible to use only for USD.');
-		
-				}else{
-		
-					return this.use('paypal');
-		
-				}
-		
-			}else{
-		
-				if(['USD','EUR','AUD'].indexOf(order.getCurrency()) > -1){
-		
-					return this.use('paypal');
-		
-				}else{
-		
-					return this.use('braintree');
-		
-				}
-		
-			}
-
-		};
-
 		describe('Public methods', function(){
 			
 			describe('resolveGateway() #SPEC', function(){
