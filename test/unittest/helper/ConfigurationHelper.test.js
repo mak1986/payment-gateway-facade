@@ -29,7 +29,7 @@
 
 		describe('Public methods', function(){
 
-			describe('Helper methods', function(){
+			describe('get(...keys)', function(){
 
 				it('get(\'key\') return the key value', function(){
 
