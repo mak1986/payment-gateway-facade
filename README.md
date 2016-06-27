@@ -4,6 +4,9 @@
 
 The library is designed to easily add another additional payment gateways.
 
+![Image of class diagram]
+(https://raw.githubusercontent.com/mak1986/payment-gateway-facade/refactor/lib/class_diagram.jpg)
+
 ## Installation ##
 
 Install bower components by running this command:
