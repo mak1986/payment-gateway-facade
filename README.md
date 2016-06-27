@@ -128,7 +128,7 @@ __STEP 4:__ Create a new file in your new payment gateway folder. Make sure to I
 
 
 
-	// PaypalGateway.prototype.getClientToken = function(callback){
+	// YourNewPaymentGateway.prototype.getClientToken = function(callback){
 
 	//	Uncomment and implement this if your new gateway requires the client to get a client token. 
 	//	If you implement this method you will need to edit the  ./public/js/clientTokenSetup.js file.
