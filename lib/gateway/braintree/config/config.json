@@ -1,5 +1,6 @@
 {
-	"environment": "Sandbox",
+	"machine_name": "braintree",
+	"camel_case": "braintree",
 	"credentials": {
 		"merchant_id": "4pzzj9tq3dk2rgmj",
 		"public_key": "js44x8w6283wbj4z",
@@ -10,6 +11,7 @@
 			"THB": "hotelquickly-thb"
 		}
 	},
+	"environment": "Sandbox",
 	"machine_name_mapping": {
 		"amex": "AmEx",
 		"dankort": null ,
@@ -22,6 +24,5 @@
 		"unionpay": "Unionpay",
 		"visa": "Visa",
 		"visa_electron": null 
-	},
-	"machine_name": "braintree"
+	}
 }

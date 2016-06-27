@@ -1,9 +1,11 @@
 {
-	"environment": "sandbox",
+	"machine_name": "paypal",
+	"camel_case": "paypal",
 	"credentials":{
-		"clientId": "ARWYCuD6tRZY1b-IW2fTiR-KA5mVtn4XMWDXUf2K5f4kKcdtwiKdviYZwqpSP_d56T0fU37I8a1jv1JE",
-  		"clientSecret": "EFf6yOXSgodhs0Ct2XQPIrRXFpoy8vxCgIMIPp6rybUcY3ynLsc3So1e_Go_nzjjoDGf6d9ez4QzdpWG"
+		"client_id": "ARWYCuD6tRZY1b-IW2fTiR-KA5mVtn4XMWDXUf2K5f4kKcdtwiKdviYZwqpSP_d56T0fU37I8a1jv1JE",
+  		"client_secret": "EFf6yOXSgodhs0Ct2XQPIrRXFpoy8vxCgIMIPp6rybUcY3ynLsc3So1e_Go_nzjjoDGf6d9ez4QzdpWG"
 	},
+	"environment": "sandbox",
 	"machine_name_mapping":{
 		"amex": "amex",
 		"dankort": null ,
@@ -16,6 +18,5 @@
 		"unionpay": null,
 		"visa": "visa",
 		"visa_electron": null 
-	},
-	"machine_name": "paypal"
+	}
 }

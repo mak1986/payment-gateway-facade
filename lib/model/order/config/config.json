@@ -1,0 +1,10 @@
+{
+	"currencies": [
+		"USD",
+		"EUR",
+		"THB",
+		"HKD",
+		"SGD",
+		"AUD"
+	]
+}
