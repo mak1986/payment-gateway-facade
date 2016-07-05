@@ -95,7 +95,7 @@
 				];
 				var creditCardTypeIndex;
 				
-				function testResolveGatewayAsPaypal(currency, gatewayMachineName){
+				function testResolveGateway(currency, gatewayMachineName){
 		
 					for(creditCardTypeIndex = 0; creditCardTypeIndex < creditCardTypes.length; creditCardTypeIndex++){
 						
@@ -111,12 +111,12 @@
 					}
 				}
 
-				testResolveGatewayAsPaypal('USD', 'paypal');
-				testResolveGatewayAsPaypal('EUR', 'paypal');
-				testResolveGatewayAsPaypal('AUD', 'paypal');
-				testResolveGatewayAsPaypal('THB', 'braintree');
-				testResolveGatewayAsPaypal('HKD', 'braintree');
-				testResolveGatewayAsPaypal('SGD', 'braintree');
+				testResolveGateway('USD', 'paypal');
+				testResolveGateway('EUR', 'paypal');
+				testResolveGateway('AUD', 'paypal');
+				testResolveGateway('THB', 'braintree');
+				testResolveGateway('HKD', 'braintree');
+				testResolveGateway('SGD', 'braintree');
 
 
 				it('use paypal if currency is USD and credit card type is amex', function(){
