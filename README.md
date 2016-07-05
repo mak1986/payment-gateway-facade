@@ -150,12 +150,6 @@ __STEP 4:__ Create a new file in your new payment gateway folder. Make sure to I
 	
 	};
 
-	YourNewPaymentGateway.prototype.getMachineName = function(){
-
-		return this.getConfig('machine_name');
-
-	};
-
 	module.exports = YourNewPaymentGateway;
 
 }());
